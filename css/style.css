@@ -4,11 +4,15 @@
   --vermelha-escura: #af303f;
   --branca: #fff;
   --luz: rgb(229, 255, 0);
+  --cor-de-fundo-body: #4568DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 body {
   align-items: center;
-  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  background: var(--cor-de-fundo-body);
   display: flex;
   justify-content: center;
   flex-direction: column;
