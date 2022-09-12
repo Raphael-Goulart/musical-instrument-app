@@ -5,7 +5,9 @@ function tocaSom (seletorAudio) {
     if (elementoAudio != null && elementoAudio.localName === 'audio') {
         elementoAudio.play();
     } 
-  
+    else {
+        console.log('Elemento não encontrado');
+    }
 }
     
 
