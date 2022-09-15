@@ -29,6 +29,10 @@ while (contador < listaDeTeclas.length) {
         }
     }
 
+    tecla.onkeyup = function () {
+        tecla.classList.remove('ativa');
+    }
+
     contador = contador + 1;
 }
 
